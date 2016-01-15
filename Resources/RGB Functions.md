@@ -1,6 +1,6 @@
 # RGB Functions
 
-## `rgb($red, $green, $blue)`
+### `rgb($red, $green, $blue)`
 Creates a Color object from red, green, and blue values.
 빨강, 초록, 파랑 값에서 색상을 작성합니다.
 ```sass
@@ -17,7 +17,7 @@ Creates a Color object from red, green, and blue values.
   p { color: rgb(110%, 0%, 0%) }  /* red */
 ```
 
-## `rgba($red, $green, $blue, $alpha)`
+### `rgba($red, $green, $blue, $alpha)`
 Creates a Color from red, green, blue, and alpha values.
 빨강, 초록, 파랑 및 알파 값에서 색상을 작성합니다.
 ```sass
@@ -33,7 +33,7 @@ Creates a Color from red, green, blue, and alpha values.
   p { color: rgba(100%, 50%, 0%, 0.1) } /* rgba(255, 128, 0, 0.1) */
 ```
 
-## `red($color)`
+### `red($color)`
 Gets the red component of a color.
 색의 빨강 구성 요소를 가져옵니다.
 ```sass
@@ -45,7 +45,7 @@ Gets the red component of a color.
   red(#7cc) /* 119 */
 ```
 
-## `green($color)`
+### `green($color)`
 Gets the green component of a color.
 색의 초록 구성 요소를 가져옵니다.
 ```sass
@@ -57,7 +57,7 @@ Gets the green component of a color.
   green(#7cc) /* 204 */
 ```
 
-## `blue($color)`
+### `blue($color)`
 Gets the blue component of a color.
 색의 파랑 구성 요소를 가져옵니다.
 ```sass
@@ -69,7 +69,7 @@ Gets the blue component of a color.
   blue(#7cc) /* 204 */
 ```
 
-## `mix($color1, $color2, $weight:50%)`
+### `mix($color1, $color2, $weight:50%)`
 Mixes two colors together.
 두 개의 색상을 혼합합니다.
 ```sass

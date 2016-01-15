@@ -4,7 +4,7 @@
 Creates a Color object from red, green, and blue values.
 빨강, 초록, 파랑 값에서 색상을 작성합니다.
 ```scss
-@param  {Number} $red   : 0 ~ 255
+@param  {Number} $red : 0 ~ 255
 @param  {Number} $green : 0 ~ 255
 @param  {Number} $blue  : 0 ~ 255
 @return {Color}

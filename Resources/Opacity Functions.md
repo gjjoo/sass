@@ -6,7 +6,7 @@ This function also supports the proprietary Microsoft alpha(opacity=20) syntax a
 
 색상의 알파 성분 (불투명도)를 반환합니다. 달리 명시 되지 않는 한 값은 1입니다.
 이 함수는 특별한 경우로써 독점적인 마이크로소프트의 `alpha(opacity=20)` 구문을 지원합니다.
-```scss
+```sass
 @param  {Color} $color
 @return {Number} : 0 ~ 1
 @examples
@@ -28,7 +28,7 @@ This function also supports the proprietary Microsoft alpha(opacity=20) syntax a
 ## `rgba($color, $alpha)`
 Sets the opacity of an existing color.
 기존 색상의 투명도를 설정합니다.
-```scss
+```sass
 @param  {Color}  $color
 @param  {Number} $alpha : 0 ~ 1
 @return {Color}
@@ -40,7 +40,7 @@ Sets the opacity of an existing color.
 ## `opacify($color, $amount)` == `fade-in($color, $amount)`
 Makes a color more opaque.
 색상을 불투명하게 만듭니다.
-```scss
+```sass
 @param  {Color}  $color
 @param  {Number} $amount : 0 ~ 1
 @return {Color}
@@ -59,7 +59,7 @@ Makes a color more opaque.
 ## `transparentize($color, $amount)` == `fade-out($color, $amount)`
 Makes a color more opaque.
 색상을 투명하게 만듭니다.
-```scss
+```sass
 @param  {Color}  $color
 @param  {Number} $amount : 0 ~ 1
 @return {Color}

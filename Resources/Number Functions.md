@@ -3,7 +3,7 @@
 ## `percentage($number)`
 Converts a unitless number to a percentage.
 단위없는 숫자를 백분율로 변환합니다.
-```scss
+```sass
 @param  {Number} $number
 @return {Number}
 @examples
@@ -14,7 +14,7 @@ Converts a unitless number to a percentage.
 ## `round($number)`
 Rounds a number to the nearest whole number.
 가장 가까운 정수로 반올림 합니다.
-```scss
+```sass
 @param  {Number} $number
 @return {Number}
 @examples
@@ -25,7 +25,7 @@ Rounds a number to the nearest whole number.
 ## `ceil($number)`
 Rounds a number up to the next whole number.
 다음 정수로 숫자를 올립니다.
-```scss
+```sass
 @param  {Number} $number
 @return {Number}
 @examples
@@ -36,7 +36,7 @@ Rounds a number up to the next whole number.
 ## `floor($number)`
 Rounds a number down to the previous whole number.
 이전 정수로 숫자를 내립니다.
-```scss
+```sass
 @param  {Number} $number
 @return {Number}
 @examples
@@ -47,7 +47,7 @@ Rounds a number down to the previous whole number.
 ## `min($numbers…)`
 Finds the minimum of several numbers.
 여러 숫자의 최소를 찾습니다.
-```scss
+```sass
 @param  {[Number]} $numbers…
 @return {Number}
 @examples
@@ -58,7 +58,7 @@ Finds the minimum of several numbers.
 ## `max($numbers…)`
 Finds the maximum of several numbers.
 여러 숫자의 최소를 찾습니다.
-```scss
+```sass
 @param  {[Number]} $numbers…
 @return {Number}
 @examples
@@ -69,7 +69,7 @@ Finds the maximum of several numbers.
 ## `random([$limit])`
 Returns a random number.
 임의의 수를 반환합니다.
-```scss
+```sass
 @param  {Number} $limit
 @return {Number}
 @examples

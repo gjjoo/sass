@@ -3,7 +3,7 @@
 ## `feature-exists($feature)`
 Returns whether a feature exists in the current Sass runtime.
 현재 사스 런타임에 기능이 존재하는지 여부를 반환합니다.
-```scss
+```sass
 @param  {String} $feature
 @return {Bool}
 @examples
@@ -16,7 +16,7 @@ Returns whether a feature exists in the current Sass runtime.
 ## `variable-exists($name)`
 Returns whether a variable with the given name exists in the current scope.
 지정된 이름을 가지는 변수가 현재 범위에 있는지 여부를 반환합니다.
-```scss
+```sass
 @param  {String} $name : '$'기호는 포함하지 않습는다.
 @return {Bool}
 @examples
@@ -29,7 +29,7 @@ Returns whether a variable with the given name exists in the current scope.
 ## `global-variable-exists($name)`
 Returns whether a variable with the given name exists in the global scope.
 지정된 이름을 가지는 변수가 전역 범위에 있는지 여부를 반환합니다.
-```scss
+```sass
 @param  {String} $name : '$'기호는 포함하지 않습는다.
 @return {Bool}
 @examples
@@ -45,7 +45,7 @@ Returns whether a variable with the given name exists in the global scope.
 ## `function-exists($name)`
 Returns whether a function with the given name exists.
 지정된 이름의 함수가 존재하는지 여부를 반환합니다.
-```scss
+```sass
 @param  {String} $name
 @return {Bool}
 @examples
@@ -58,7 +58,7 @@ Returns whether a function with the given name exists.
 ## `mixin-exists($name)`
 Returns whether a mixin with the given name exists.
 지정된 이름의 믹스 인이 존재하는지 여부를 반환합니다.
-```scss
+```sass
 @param  {String} $name
 @return {Bool}
 @examples
@@ -71,7 +71,7 @@ Returns whether a mixin with the given name exists.
 ## `inspect($value)`
 Returns the string representation of a value as it would be represented in Sass.
 Sass 안에서 표현될 것 같은 값을 문자열 표현으로 반환합니다.
-```scss
+```sass
 @param  {Base} $value
 @return {String}
 @examples
@@ -84,7 +84,7 @@ Sass 안에서 표현될 것 같은 값을 문자열 표현으로 반환합니�
 ## `type-of($value)`
 Returns the type of a value.
 값의 형태를 반환합니다.
-```scss
+```sass
 @param  {Base} $value
 @return {String}
 @examples
@@ -99,7 +99,7 @@ Returns the type of a value.
 ## `unit($number)`
 Returns the units associated with a number.
 숫자와 관련된 단위를 돌려줍니다.
-```scss
+```sass
 @param  {Number} $number
 @return {String}
 @examples
@@ -113,7 +113,7 @@ Returns the units associated with a number.
 ## `unitless($number)`
 Returns whether a number has units.
 숫자에서 단위 여부를 반환합니다.
-```scss
+```sass
 @param  {Number} $number
 @return {Bool} : 단위가 없으면 true | 단위가 있으면 false
 @examples
@@ -124,7 +124,7 @@ Returns whether a number has units.
 ## `comparable($number1, $number2)`
 Returns whether two numbers can be added, subtracted, or compared.
 두 숫자가 추가 감산, 또는 비교 될 수 있는지 여부를 반환합니다.
-```scss
+```sass
 @param  {Number} $number1
 @param  {Number} $number2
 @return {Bool}
@@ -137,7 +137,7 @@ Returns whether two numbers can be added, subtracted, or compared.
 ## `call($name, $args…)`
 Dynamically calls a Sass function.
 동적으로 Sass 함수를 호출합니다.
-```scss
+```sass
 @param  {String} $name  : 함수 이름
 @param  {Base}   $args… : 해당 함수 이름의 인자 값
 @examples

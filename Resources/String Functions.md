@@ -3,7 +3,7 @@
 ## `unquote($string)`
 Removes quotes from a string.
 문자열에서 따옴표를 제거합니다.
-```scss
+```sass
 @param  {String} $string
 @return {String}
 @examples
@@ -14,7 +14,7 @@ Removes quotes from a string.
 ## `quote($string)`
 Adds quotes to a string.
 문자열에 따옴표를 추가합니다.
-```scss
+```sass
 @param  {String} $string
 @return {String}
 @examples
@@ -25,7 +25,7 @@ Adds quotes to a string.
 ## `str_length($string)`
 Returns the number of characters in a string.
 문자열의 문자 수를 돌려줍니다.
-```scss
+```sass
 @param  {String} $string
 @return {Number}
 @examples
@@ -35,7 +35,7 @@ Returns the number of characters in a string.
 ## `str_insert($string, $insert, $index)`
 Inserts $insert into $string at $index.
 `$insert`의 값을 `$string`의 `$index` 위치에 삽입합니다.
-```scss
+```sass
 @param  {String} $string
 @param  {String} $insert
 @param  {Number} $index
@@ -49,7 +49,7 @@ Inserts $insert into $string at $index.
 ## `str_index($string, $substring)`
 Returns the index of the first occurrence of $substring in $string.
 `$string`에서 `$substring`의 첫 번째 항목의 인덱스를 돌려줍니다.
-```scss
+```sass
 @param  {String} $string
 @param  {String} $substring
 @return {Number, Null}
@@ -63,7 +63,7 @@ Returns the index of the first occurrence of $substring in $string.
 ## `str_slice($string, $start-at, $end-at:-1)`
 Extracts a substring from $string.
 `$string`에서 문자열을 추출합니다.
-```scss
+```sass
 @param  {String} $string
 @param  {Number} $start-at
 @param  {Number} $end-at
@@ -78,7 +78,7 @@ Extracts a substring from $string.
 ## `to_upper_case($string)`
 Converts a string to upper case.
 대문자로 된 문자열로 변환합니다.
-```scss
+```sass
 @param  {String} $string
 @return {String}
 @examples
@@ -88,7 +88,7 @@ Converts a string to upper case.
 ## `to_lower_case($string)`
 Converts a string to lower case.
 소문자로 된 문자열로 변환합니다.
-```scss
+```sass
 @param  {String} $string
 @return {String}
 @examples

@@ -20,7 +20,7 @@ Creates a Color object from red, green, and blue values.
 ## `rgba($red, $green, $blue, $alpha)`
 Creates a Color from red, green, blue, and alpha values.
 빨강, 초록, 파랑 및 알파 값에서 색상을 작성합니다.
-```scss
+```sass
 @param  {Number} $red   : 0 ~ 255 or 0% ~ 100%
 @param  {Number} $green : 0 ~ 255 or 0% ~ 100%
 @param  {Number} $blue  : 0 ~ 255 or 0% ~ 100%
@@ -36,7 +36,7 @@ Creates a Color from red, green, blue, and alpha values.
 ## `red($color)`
 Gets the red component of a color.
 색의 빨강 구성 요소를 가져옵니다.
-```scss
+```sass
 @param  {Color} $color
 @return {Number} : 0 ~ 255
 @examples
@@ -48,7 +48,7 @@ Gets the red component of a color.
 ## `green($color)`
 Gets the green component of a color.
 색의 초록 구성 요소를 가져옵니다.
-```scss
+```sass
 @param  {Color} $color
 @return {Number} : 0 ~ 255
 @examples
@@ -60,7 +60,7 @@ Gets the green component of a color.
 ## `blue($color)`
 Gets the blue component of a color.
 색의 파랑 구성 요소를 가져옵니다.
-```scss
+```sass
 @param  {Color} $color
 @return {Number} : 0 ~ 255
 @examples
@@ -72,7 +72,7 @@ Gets the blue component of a color.
 ## `mix($color1, $color2, $weight:50%)`
 Mixes two colors together.
 두 개의 색상을 혼합합니다.
-```scss
+```sass
 @param  {Color}  $color1
 @param  {Color}  $color2
 @param  {Number} $weight : 0% ~ 100%

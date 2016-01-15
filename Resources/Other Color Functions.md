@@ -3,7 +3,7 @@
 ## `adjust_color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])`
 Increases or decreases one or more properties of a color. This can change the red, green, blue, hue, saturation, value, and alpha properties.
 증가 또는 색의 1 이상의 특성을 감소시킨다. 빨강, 녹색, 파랑, 색조, 채도, 값 및 알파 속성을 변경할 수 있습니다.
-```scss
+```sass
 @param  {Color}  $color
 @param  {Number} $red         : -255 ~ 255
 @param  {Number} $green       : -255 ~ 255
@@ -22,7 +22,7 @@ Increases or decreases one or more properties of a color. This can change the re
 ## `scale_color($color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha])`
 Fluidly scales one or more properties of a color. This can change the red, green, blue, saturation, value, and alpha properties. 
 유동적 색상 중 하나 이상의 속성을 확장 할 수 있습니다. 빨강, 녹색, 파랑, 채도, 값 및 알파 속성을 변경할 수 있습니다.
-```scss
+```sass
 @param  {Color}  $color
 @param  {Number} $red         : -255 ~ 255
 @param  {Number} $green       : -255 ~ 255
@@ -40,7 +40,7 @@ Fluidly scales one or more properties of a color. This can change the red, green
 ## `change_color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])`
 Changes one or more properties of a color. This can change the red, green, blue, hue, saturation, value, and alpha properties.
 색상 중 하나 이상의 속성을 변경합니다. 빨강, 녹색, 파랑, 색조, 채도, 값 및 알파 속성을 변경할 수 있습니다.
-```scss
+```sass
 @param  {Color}  $color
 @param  {Number} $red         : 0 ~ 255
 @param  {Number} $green       : 0 ~ 255
@@ -59,7 +59,7 @@ Changes one or more properties of a color. This can change the red, green, blue,
 ## `ie_hex_str($color)`
 Converts a color into the format understood by IE filters.
 IE의 필터에 의해 이해되는 형식으로 색상을 변환합니다.
-```scss
+```sass
 @param  {Color} $color
 @return {String}
 @examples

@@ -3,7 +3,7 @@
 ## `length($list)`
 Returns the length of a list. This can return the number of pairs in a map as well.
 리스트의 길이를 반환합니다. 뿐만 아니라 맵에 쌍의 수를 반환 할 수 있습니다.
-```scss
+```sass
 @param  {Base} $list
 @return {Number}
 @examples
@@ -15,7 +15,7 @@ Returns the length of a list. This can return the number of pairs in a map as we
 ## `nth($list, $n)`
 Returns a specific item in a list.
 목록에서 특정 항목을 돌려줍니다.
-```scss
+```sass
 @param  {Base}   $list
 @param  {Number} $n
 @return {List}
@@ -28,7 +28,7 @@ Returns a specific item in a list.
 ## `set-nth($list, $n, $value)`
 Replaces the nth item in a list.
 목록에서 n 번째 항목을 대체합니다.
-```scss
+```sass
 @param  {Base}   $list
 @param  {Number} $n
 @param  {Base}   $value
@@ -41,7 +41,7 @@ Replaces the nth item in a list.
 ## `join($list1, $list2, [$separator:auto])`
 Joins together two lists into one.
 하나에 두 개의 목록을 함께 결합합니다.
-```scss
+```sass
 @param  {Base}   $list1
 @param  {Base}   $list2
 @param  {String} $separator : auto(default) | comma | space
@@ -57,7 +57,7 @@ Joins together two lists into one.
 ## `append($list1, $val, [$separator:auto])`
 Appends a single value onto the end of a list.
 리스트의 끝에 단일 값을 추가합니다.
-```scss
+```sass
 @param  {Base}   $list
 @param  {Base}   $val
 @param  {String} $separator : auto(default) | comma | space
@@ -73,7 +73,7 @@ Appends a single value onto the end of a list.
 ## `zip($lists…)`
 Combines several lists into a single multidimensional list.
 하나의 다차원 목록에 여러 개의 목록을 결합합니다.
-```scss
+```sass
 @param  {Base} $lists…
 @return {List}
 @examples
@@ -83,7 +83,7 @@ Combines several lists into a single multidimensional list.
 ## `index($list, $value)`
 Returns the position of a value within a list.
 목록 내의 값의 위치를 돌려줍니다.
-```scss
+```sass
 @param  {Base} $list
 @param  {Base} $value
 @return {Number, Null}
@@ -95,7 +95,7 @@ Returns the position of a value within a list.
 ## `list-separator($list)`
 Returns the separator of a list.
 목록의 분리를 돌려줍니다.
-```scss
+```sass
 @param  {Base} $list
 @return {String} : comma | space
 @examples

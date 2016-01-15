@@ -1,0 +1,5 @@
+# SASS -> CSS 코드를 출력하는 4가지 스타일
+
+```css
+/* * nested * 마지막 중괄호가 코드 바로 뒤에 위치 */#main {  color: #fff;  background-color: #000; }#main p {  width: 10em; }.huge {  font-size: 10em;  font-weight: bold; }  /* * expanded * 확장형, 중괄호가 코드 다음라인에 위치 */#main {  color: #fff;  background-color: #000;}#main p {  width: 10em;}.huge {  font-size: 10em;  font-weight: bold;}/* * compact * 한줄 표현 방식 */#main {color: #fff; background-color: #000;}#main p {width: 10em;}.huge {font-size: 10em; font-weight: bold;}/* * compressed * 모든 라인 및 공백 제거 */#main{color:#fff;background-color:#000;}#main p{width:10em;}.huge{font-size:10em;font-weight:bold;}
+```

@@ -1,6 +1,6 @@
 # Number Functions
 
-## `percentage($number)`
+### `percentage($number)`
 Converts a unitless number to a percentage.
 단위없는 숫자를 백분율로 변환합니다.
 ```sass
@@ -11,7 +11,7 @@ Converts a unitless number to a percentage.
   percentage(100px / 50px)  /* 200% */
 ```
 
-## `round($number)`
+### `round($number)`
 Rounds a number to the nearest whole number.
 가장 가까운 정수로 반올림 합니다.
 ```sass
@@ -22,7 +22,7 @@ Rounds a number to the nearest whole number.
   round(10.6px) /* 11px */
 ```
 
-## `ceil($number)`
+### `ceil($number)`
 Rounds a number up to the next whole number.
 다음 정수로 숫자를 올립니다.
 ```sass
@@ -33,7 +33,7 @@ Rounds a number up to the next whole number.
   ceil(10.6px)  /* 11px */
 ```
 
-## `floor($number)`
+### `floor($number)`
 Rounds a number down to the previous whole number.
 이전 정수로 숫자를 내립니다.
 ```sass
@@ -44,7 +44,7 @@ Rounds a number down to the previous whole number.
   floor(10.6px)  /* 10px */
 ```
 
-## `min($numbers…)`
+### `min($numbers…)`
 Finds the minimum of several numbers.
 여러 숫자의 최소를 찾습니다.
 ```sass
@@ -55,7 +55,7 @@ Finds the minimum of several numbers.
   min(5em, 3em, 4em)  /* 3em */
 ```
 
-## `max($numbers…)`
+### `max($numbers…)`
 Finds the maximum of several numbers.
 여러 숫자의 최소를 찾습니다.
 ```sass
@@ -66,7 +66,7 @@ Finds the maximum of several numbers.
   max(5em, 3em, 4em)  /* 5em */
 ```
 
-## `random([$limit])`
+### `random([$limit])`
 Returns a random number.
 임의의 수를 반환합니다.
 ```sass

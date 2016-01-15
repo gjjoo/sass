@@ -1,6 +1,6 @@
 # Selector Functions
 
-## `selector-nest($selectors…)`
+### `selector-nest($selectors…)`
 Nests selector beneath one another like they would be nested in the stylesheet.
 하나 아래에 중첩 된 선택은 그것과 같은 스타일에 중첩됩니다.
 ```sass
@@ -12,7 +12,7 @@ Nests selector beneath one another like they would be nested in the stylesheet.
   selector-nest(".foo", "&.bar")        /* .foo.bar */
 ```
 
-## `selector-append($selectors…)`
+### `selector-append($selectors…)`
 Appends selectors to one another without spaces in between.
 사이의 공백없이 선택자를 추가합니다.
 ```sass
@@ -24,7 +24,7 @@ Appends selectors to one another without spaces in between.
   selector-append(".foo", "-suffix")      /* .foo-suffix */
 ```
 
-## `selector-extend($selector, $extendee, $extender)`
+### `selector-extend($selector, $extendee, $extender)`
 Extends $extendee with $extender within $selector.
 `$selector`내에서 `$extender`와 `$extendee`를 확장합니다.
 ```sass
@@ -36,7 +36,7 @@ Extends $extendee with $extender within $selector.
   selector-extend(".a .b", ".b", ".foo .bar") /* .a .b, .a .foo .bar, .foo .a .bar */
 ```
 
-## `selector-replace($selector, $original, $replacement)`
+### `selector-replace($selector, $original, $replacement)`
 Replaces $original with $replacement within $selector.
 `$selector`내에서 `$original`와 `$replacement`를 확장합니다.
 ```sass
@@ -49,7 +49,7 @@ Replaces $original with $replacement within $selector.
   selector-replace(".foo.bar.baz", ".foo.baz", ".qux")  /* .bar.qux */
 ```
 
-## `selector-unify($selector1, $selector2)`
+### `selector-unify($selector1, $selector2)`
 Unifies two selectors to produce a selector that matches elements matched by both.
 유사한 요소 모두를 일치 선택자로 생산하기 위해 두 선택자를 단결합니다.
 ```sass
@@ -63,7 +63,7 @@ Unifies two selectors to produce a selector that matches elements matched by bot
   selector-unify("#a", "#b")        /* null */
 ```
 
-## `is-superselector($super, $sub)`
+### `is-superselector($super, $sub)`
 Returns whether $super matches all the elements $sub does, and possibly more.
 `$super`가 아마도 더 많은 모든 요소 `$sub`에서 일치하는지 여부를 확인합니다.
 ```sass
@@ -77,7 +77,7 @@ Returns whether $super matches all the elements $sub does, and possibly more.
   is-superselector(".foo .bar", ".bar") /* false */
 ```
 
-## `simple-selectors($selector)`
+### `simple-selectors($selector)`
 Returns the simple selectors that comprise a compound selector.
 복합 선택기를 구성하는 간단한 선택자를 반환합니다.
 ```sass
@@ -88,7 +88,7 @@ Returns the simple selectors that comprise a compound selector.
   simple-selectors(".foo.bar.baz")  /* .foo, .bar, .baz */
 ```
 
-## `selector-parse($selector)`
+### `selector-parse($selector)`
 Parses a selector into the format returned by &.
 복합 선택기를 구성하는 간단한 선택자를 반환합니다.
 ```sass

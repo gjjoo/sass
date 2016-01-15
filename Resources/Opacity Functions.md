@@ -1,6 +1,6 @@
 # Opacity Functions
 
-## `alpha($color)` == `opacity($color)`
+### `alpha($color)` == `opacity($color)`
 Returns the alpha component (opacity) of a color. This is 1 unless otherwise specified.
 This function also supports the proprietary Microsoft alpha(opacity=20) syntax as a special case.
 
@@ -16,7 +16,7 @@ This function also supports the proprietary Microsoft alpha(opacity=20) syntax a
   alpha(hsl(120, 100%, 25%))      /* 1 */
   alpha(#05ffff)                  /* 1 */
   alpha(#ffff50)                  /* 1 */
-  
+
   opacity(rgba(100%, 50%, 0%, 0.5)) /* 0.5 */
   opacity(lighten(#800, 20%))       /* 1 */
   opacity(lightness(#ff3366))       /* opacity(60%) */
@@ -25,7 +25,7 @@ This function also supports the proprietary Microsoft alpha(opacity=20) syntax a
   opacity(#ffff50)                  /* 1 */
 ```
 
-## `rgba($color, $alpha)`
+### `rgba($color, $alpha)`
 Sets the opacity of an existing color.
 기존 색상의 투명도를 설정합니다.
 ```sass
@@ -37,7 +37,7 @@ Sets the opacity of an existing color.
   p { color: rgba(blue, 0.2) }    /* rgba(0, 0, 255, 0.2) */
 ```
 
-## `opacify($color, $amount)` == `fade-in($color, $amount)`
+### `opacify($color, $amount)` == `fade-in($color, $amount)`
 Makes a color more opaque.
 색상을 불투명하게 만듭니다.
 ```sass
@@ -47,16 +47,16 @@ Makes a color more opaque.
 @examples
   p { color: opacify(rgba(0, 0, 0, 0.5), 0.1) }     /* rgba(0, 0, 0, 0.6) */
   p { color: opacify(rgba(0, 0, 0, 0.5), 0.4) }     /* rgba(0, 0, 0, 0.9) */
-  p { color: opacify(rgba(0, 0, 17, 0.8), 0.2) }    /* #000011 */    
+  p { color: opacify(rgba(0, 0, 17, 0.8), 0.2) }    /* #000011 */
   p { color: opacify(rgba(255, 0, 17, 0.2), 0.5) }  /* rgba(255, 0, 17, 0.7) */
-  
+
   p { color: fade-in(rgba(0, 0, 0, 0.5), 0.1) }     /* rgba(0, 0, 0, 0.6) */
   p { color: fade-in(rgba(0, 0, 0, 0.5), 0.4) }     /* rgba(0, 0, 0, 0.9) */
-  p { color: fade-in(rgba(0, 0, 17, 0.8), 0.2) }    /* #000011 */    
+  p { color: fade-in(rgba(0, 0, 17, 0.8), 0.2) }    /* #000011 */
   p { color: fade-in(rgba(255, 0, 17, 0.2), 0.5) }  /* rgba(255, 0, 17, 0.7) */
 ```
 
-## `transparentize($color, $amount)` == `fade-out($color, $amount)`
+### `transparentize($color, $amount)` == `fade-out($color, $amount)`
 Makes a color more opaque.
 색상을 투명하게 만듭니다.
 ```sass
@@ -68,7 +68,7 @@ Makes a color more opaque.
   p { color: transparentize(rgba(0, 0, 0, 0.5), 0.4) }     /* rgba(0, 0, 0, 0.1) */
   p { color: transparentize(rgba(0, 0, 17, 0.8), 0.2) }    /* rgba(0, 0, 17, 0.6) */
   p { color: transparentize(rgba(255, 0, 17, 0.2), 0.5) }  /* rgba(255, 0, 17, 0) */
-    
+
   p { color: fade-out(rgba(0, 0, 0, 0.5), 0.1) }     /* rgba(0, 0, 0, 0.4) */
   p { color: fade-out(rgba(0, 0, 0, 0.5), 0.4) }     /* rgba(0, 0, 0, 0.1) */
   p { color: fade-out(rgba(0, 0, 17, 0.8), 0.2) }    /* rgba(0, 0, 17, 0.6) */

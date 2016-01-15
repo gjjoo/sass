@@ -1,6 +1,6 @@
 # String Functions
 
-## `unquote($string)`
+### `unquote($string)`
 Removes quotes from a string.
 문자열에서 따옴표를 제거합니다.
 ```sass
@@ -11,7 +11,7 @@ Removes quotes from a string.
   unquote(foo)    /* foo */
 ```
 
-## `quote($string)`
+### `quote($string)`
 Adds quotes to a string.
 문자열에 따옴표를 추가합니다.
 ```sass
@@ -22,7 +22,7 @@ Adds quotes to a string.
   quote(foo)    /* "foo" */
 ```
 
-## `str_length($string)`
+### `str_length($string)`
 Returns the number of characters in a string.
 문자열의 문자 수를 돌려줍니다.
 ```sass
@@ -32,7 +32,7 @@ Returns the number of characters in a string.
   str-length("foo") /* 3 */
 ```
 
-## `str_insert($string, $insert, $index)`
+### `str_insert($string, $insert, $index)`
 Inserts $insert into $string at $index.
 `$insert`의 값을 `$string`의 `$index` 위치에 삽입합니다.
 ```sass
@@ -46,7 +46,7 @@ Inserts $insert into $string at $index.
   str-insert("abcd", "X", 5)  /* "abcdX" */
 ```
 
-## `str_index($string, $substring)`
+### `str_index($string, $substring)`
 Returns the index of the first occurrence of $substring in $string.
 `$string`에서 `$substring`의 첫 번째 항목의 인덱스를 돌려줍니다.
 ```sass
@@ -60,7 +60,7 @@ Returns the index of the first occurrence of $substring in $string.
   str-index(abcd, c)  /* 3 */
 ```
 
-## `str_slice($string, $start-at, $end-at:-1)`
+### `str_slice($string, $start-at, $end-at:-1)`
 Extracts a substring from $string.
 `$string`에서 문자열을 추출합니다.
 ```sass
@@ -75,7 +75,7 @@ Extracts a substring from $string.
   str-slice("abcd", 2, -2)  /* "bc" */
 ```
 
-## `to_upper_case($string)`
+### `to_upper_case($string)`
 Converts a string to upper case.
 대문자로 된 문자열로 변환합니다.
 ```sass
@@ -85,7 +85,7 @@ Converts a string to upper case.
   to-upper-case(abcd) /* ABCD */
 ```
 
-## `to_lower_case($string)`
+### `to_lower_case($string)`
 Converts a string to lower case.
 소문자로 된 문자열로 변환합니다.
 ```sass

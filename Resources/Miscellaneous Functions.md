@@ -1,6 +1,6 @@
 # Miscellaneous Functions
 
-## `if($condition, $if-true, $if-false)`
+### `if($condition, $if-true, $if-false)`
 Returns one of two values, depending on whether or not $condition is true.
 `$condition`이 참인지 여부에 따라 두 값중 하나를 반환합니다.
 ```sass
@@ -13,7 +13,7 @@ Returns one of two values, depending on whether or not $condition is true.
   if(false, 1px, 2px) /* 2px */
 ```
 
-## `unique-id()`
+### `unique-id()`
 Returns a unique CSS identifier.
 고유 CSS 식별자를 돌려줍니다.
 ```sass

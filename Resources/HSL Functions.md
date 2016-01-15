@@ -1,6 +1,6 @@
 # HSL Functions
 
-## `hsl($hue, $saturation, $lightness)`
+### `hsl($hue, $saturation, $lightness)`
 Creates a Color from hue, saturation, and lightness values.
 색조, 채도 및 밝기 값에서 색상을 작성합니다.
 ```sass
@@ -16,7 +16,7 @@ Creates a Color from hue, saturation, and lightness values.
   p { color: hsl(120, 75%, 75%) }  /* #8fef8f */
 ```
 
-## `hsla($hue, $saturation, $lightness, $alpha)`
+### `hsla($hue, $saturation, $lightness, $alpha)`
 Creates a Color from hue, saturation, lightness, and alpha values.
 색조, 채도, 밝기 및 알파 값에서 색상을 작성합니다.
 ```sass
@@ -31,7 +31,7 @@ Creates a Color from hue, saturation, lightness, and alpha values.
   p { color: hsla(30, 100%, 50%, 0.1) }  /* rgba(255, 128, 0, 0.1) */
 ```
 
-## `hue($color)`
+### `hue($color)`
 Gets the hue component of a color.
 색의 색조 구성 요소를 가져옵니다.
 ```sass
@@ -45,7 +45,7 @@ Gets the hue component of a color.
   hue(#af9cff)  /* 251.51515deg */
 ```
 
-## `saturation($color)`
+### `saturation($color)`
 Gets the saturation component of a color.
 색의 채도 구성 요소를 가져옵니다.
 ```sass
@@ -59,7 +59,7 @@ Gets the saturation component of a color.
   saturation(#af9cff)  /* 100% */
 ```
 
-## `lightness($color)`
+### `lightness($color)`
 Gets the lightness component of a color.
 색의 밝기 구성 요소를 가져옵니다.
 ```sass
@@ -73,7 +73,7 @@ Gets the lightness component of a color.
   lightness(#af9cff)  /* 80.58824% */
 ```
 
-## `adjust_hue($color, $degrees)`
+### `adjust_hue($color, $degrees)`
 Changes the hue of a color.
 색상의 색조를 변경합니다.
 ```sass
@@ -86,7 +86,7 @@ Changes the hue of a color.
   p { color: adjust-hue(#811, 45deg) }                /* #886a11 */
 ```
 
-## `lighten($color, $amount)`
+### `lighten($color, $amount)`
 Makes a color lighter.
 색상을 밝게 만듭니다.
 ```sass
@@ -98,7 +98,7 @@ Makes a color lighter.
   p { color: lighten(#800, 20%) }           /* #ee0000 */
 ```
 
-## `darken($color, $amount)`
+### `darken($color, $amount)`
 Makes a color darker.
 색상 어둡게 만듭니다.
 ```sass
@@ -110,7 +110,7 @@ Makes a color darker.
   p { color: darken(#800, 20%) }                /* #220000 */
 ```
 
-## `saturate($color, $amount)`
+### `saturate($color, $amount)`
 Makes a color more saturated.
 색상에 좀 더 많은 채도를 만듭니다.
 ```sass
@@ -122,7 +122,7 @@ Makes a color more saturated.
   p { color: saturate(#855, 20%) }                /* #9e3f3f */
 ```
 
-## `desaturate($color, $amount)`
+### `desaturate($color, $amount)`
 Makes a color less saturated.
 색상에 좀 더 낮은 채도를 만듭니다.
 ```sass
@@ -134,7 +134,7 @@ Makes a color less saturated.
   p { color: desaturate(#855, 20%) } /* #726b6b */
 ```
 
-## `grayscale($color)`
+### `grayscale($color)`
 Converts a color to grayscale. This is identical to desaturate(color, 100%).
 회색 음영으로 색상을 변환합니다. 이것은 `desaturate($color, 100%)`와 동일합니다.
 ```sass
@@ -149,7 +149,7 @@ Converts a color to grayscale. This is identical to desaturate(color, 100%).
   p { color: grayscale(#CC31C3) } /* #7f7f7f */
 ```
 
-## `complement($color)`
+### `complement($color)`
 Returns the complement of a color. This is identical to adjust-hue(color, 180deg).
 색의 보수를 반환합니다. 이것은 `adjust-hue($color, 180deg)`와 동일합니다.
 ```sass
@@ -161,7 +161,7 @@ Returns the complement of a color. This is identical to adjust-hue(color, 180deg
   p { color: complement(#00fc00) } /* #fc00fc */
 ```
 
-## `invert($color)`
+### `invert($color)`
 Returns the inverse (negative) of a color. The red, green, and blue values are inverted, while the opacity is left alone.
 색을 뒤집습니다. 불투명도가 방치되면서 적색, 녹색, 청색의 값이반전됩니다.
 ```sass

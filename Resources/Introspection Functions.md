@@ -1,6 +1,6 @@
 # Introspection Functions
 
-## `feature-exists($feature)`
+### `feature-exists($feature)`
 Returns whether a feature exists in the current Sass runtime.
 현재 사스 런타임에 기능이 존재하는지 여부를 반환합니다.
 ```sass
@@ -13,7 +13,7 @@ Returns whether a feature exists in the current Sass runtime.
   feature-exists(at-error); /* true */
 ```
 
-## `variable-exists($name)`
+### `variable-exists($name)`
 Returns whether a variable with the given name exists in the current scope.
 지정된 이름을 가지는 변수가 현재 범위에 있는지 여부를 반환합니다.
 ```sass
@@ -22,11 +22,11 @@ Returns whether a variable with the given name exists in the current scope.
 @examples
   $a-false-value: false;
   variable-exists(a-false-value) /* true */
-  
+
   variable-exists(nonexistent) /* false */
 ```
 
-## `global-variable-exists($name)`
+### `global-variable-exists($name)`
 Returns whether a variable with the given name exists in the global scope.
 지정된 이름을 가지는 변수가 전역 범위에 있는지 여부를 반환합니다.
 ```sass
@@ -35,14 +35,14 @@ Returns whether a variable with the given name exists in the global scope.
 @examples
   $a-false-value: false;
   global-variable-exists(a-false-value) /* true */
-  
+
   .foo {
     $some-var: false;
     @if global-variable-exists(some-var) { /* false, doesn't run */ }
   }
 ```
 
-## `function-exists($name)`
+### `function-exists($name)`
 Returns whether a function with the given name exists.
 지정된 이름의 함수가 존재하는지 여부를 반환합니다.
 ```sass
@@ -50,12 +50,12 @@ Returns whether a function with the given name exists.
 @return {Bool}
 @examples
   function-exists(lighten); /* true */
-  
+
   @function myfunc { @return "something"; }
   function-exists(myfunc); /* true */
 ```
 
-## `mixin-exists($name)`
+### `mixin-exists($name)`
 Returns whether a mixin with the given name exists.
 지정된 이름의 믹스 인이 존재하는지 여부를 반환합니다.
 ```sass
@@ -63,12 +63,12 @@ Returns whether a mixin with the given name exists.
 @return {Bool}
 @examples
   mixin-exists(nonexistent) /* false */
-  
+
   @mixin red-text { color: red; }
   mixin-exists(red-text) /* true */
 ```
 
-## `inspect($value)`
+### `inspect($value)`
 Returns the string representation of a value as it would be represented in Sass.
 Sass 안에서 표현될 것 같은 값을 문자열 표현으로 반환합니다.
 ```sass
@@ -81,7 +81,7 @@ Sass 안에서 표현될 것 같은 값을 문자열 표현으로 반환합니�
   inspect(rgba(#FF7F00, 0.4))     /* rgba(255, 127, 0, 0.4) */
 ```
 
-## `type-of($value)`
+### `type-of($value)`
 Returns the type of a value.
 값의 형태를 반환합니다.
 ```sass
@@ -96,7 +96,7 @@ Returns the type of a value.
   type-of(blue)   /* color */
 ```
 
-## `unit($number)`
+### `unit($number)`
 Returns the units associated with a number.
 숫자와 관련된 단위를 돌려줍니다.
 ```sass
@@ -110,7 +110,7 @@ Returns the units associated with a number.
   unit(10px * 5em / 30cm / 1rem) /* em/rem */
 ```
 
-## `unitless($number)`
+### `unitless($number)`
 Returns whether a number has units.
 숫자에서 단위 여부를 반환합니다.
 ```sass
@@ -121,7 +121,7 @@ Returns whether a number has units.
   unitless(100px) /* false */
 ```
 
-## `comparable($number1, $number2)`
+### `comparable($number1, $number2)`
 Returns whether two numbers can be added, subtracted, or compared.
 두 숫자가 추가 감산, 또는 비교 될 수 있는지 여부를 반환합니다.
 ```sass
@@ -134,7 +134,7 @@ Returns whether two numbers can be added, subtracted, or compared.
   comparable(10cm, 3mm)   /* true */
 ```
 
-## `call($name, $args…)`
+### `call($name, $args…)`
 Dynamically calls a Sass function.
 동적으로 Sass 함수를 호출합니다.
 ```sass
@@ -143,7 +143,7 @@ Dynamically calls a Sass function.
 @examples
   call(rgb, 10, 100, 255) /* #0a64ff */
   call(scale-color, #0a64ff, $lightness: -10%) /* #0058ef */
-  
+
   $fn: nth;
   call($fn, (a b c), 2) /* b */
 ```
